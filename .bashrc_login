@@ -1,0 +1,4 @@
+#!/bin/bash
+# sourced only when an interactive shell is also a login and always run last
+
+

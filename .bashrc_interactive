@@ -1,7 +1,10 @@
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/texbin
+#!/bin/bash
+# sourced only when the shell is interactive
+
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # bash prompt
-PS1="\u@\h:\w $ "
+PS1="\u@\h:\w$ "
 
 # for python virtual environment
 if [ -r /usr/bin/virtualenvwrapper.sh ]; then
@@ -22,3 +25,4 @@ alias ls='ls -la'
 # mac vim
 export MACVIM=/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/Resources/vim
 alias vim='mvim'
+

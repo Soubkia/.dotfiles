@@ -1,0 +1,2 @@
+#!/bin/bash
+# sourced on every bash instantiation and always run first
