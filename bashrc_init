@@ -12,3 +12,4 @@ ln -sf $DIR/.bashrc_script ~/.bashrc_script
 ln -sf $DIR/.bashrc_interactive ~/.bashrc_interactive
 ln -sf $DIR/.bashrc_login ~/.bashrc_login
 
+ln -sf $DIR/.vimrc ~/.vimrc

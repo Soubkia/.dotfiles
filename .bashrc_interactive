@@ -20,7 +20,7 @@ alias home='cd $HOME'
 alias programming='cd $HOME/Programming'
 alias g='egrep -i'
 alias G='egrep'
-alias ls='ls -la'
+alias li='ls -li'
 
 # mac vim
 export MACVIM=/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/Resources/vim
