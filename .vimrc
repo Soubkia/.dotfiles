@@ -13,3 +13,4 @@ set shiftwidth=4
 set smarttab
 set nu
 nmap <Space> i_<Esc>r
+colorscheme molokai
