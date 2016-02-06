@@ -15,3 +15,9 @@ ln -sf $DIR/.bashrc_login ~/.bashrc_login
 rm -rf ~/.vim
 ln -sf $DIR/.vim ~/.vim
 ln -sf $DIR/.vimrc ~/.vimrc
+
+rm -rf $DIR/.vim/bundle
+mkdir -p $DIR/.vim/bundle
+cd $DIR/.vim/bundle
+git clone git://github.com/tpope/vim-sensible.git
+git clone https://github.com/flazz/vim-colorschemes.git
