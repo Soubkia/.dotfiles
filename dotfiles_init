@@ -21,3 +21,6 @@ mkdir -p $DIR/.vim/bundle
 cd $DIR/.vim/bundle
 git clone git://github.com/tpope/vim-sensible.git
 git clone https://github.com/flazz/vim-colorschemes.git
+
+open /Users/AdilSoubki/.dotfiles/.terminal/Molokai.terminal
+
