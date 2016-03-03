@@ -17,7 +17,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 
 # common aliases
 alias home='cd $HOME'
-alias programming='cd $HOME/Programming'
+alias dev='cd $HOME/dev'
 alias g='egrep -i'
 alias G='egrep'
 alias ls='ls -G'
