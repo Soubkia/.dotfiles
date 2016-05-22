@@ -18,6 +18,7 @@ ln -sf $DIR/.vimrc ~/.vimrc
 
 rm -rf $DIR/.vim/bundle
 mkdir -p $DIR/.vim/bundle
+curl -fLo $DIR/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 open /Users/AdilSoubki/.dotfiles/.terminal/Molokai.terminal
 
