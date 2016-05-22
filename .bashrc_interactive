@@ -3,8 +3,12 @@
 
 export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
+# git completion
+source /usr/local/etc/bash_completion.d/git-completion.bash
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+
 # bash prompt
-PS1="\u@\h:\w$ "
+PS1="\u@\h:\w$(__git_ps1 "(%s)")$ "
 
 # for python virtual environment
 if [ -r /usr/bin/virtualenvwrapper.sh ]; then
