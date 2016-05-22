@@ -78,3 +78,4 @@ unset fn_cmd
 
 unset EXPORT_FUNCTIONS
 unset BASHRC_DISPATCH_PID
+
