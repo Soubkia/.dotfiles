@@ -2,7 +2,7 @@
 set nocompatible
 
 " General
-let mapleader=","
+let mapleader=" "
 nnoremap ; :
 set mouse=a " enable mouse control in all modes
 syntax enable
@@ -12,6 +12,8 @@ set history=1000 " remember more commands and search history
 set undolevels=1000 " use many muchos levels of undo
 nnoremap <leader>q :q<CR>
 nnoremap <leader>qq :q!<CR>
+set timeoutlen=150 " mapping delay
+set ttimeoutlen=0 " key code delay
 
 " Save last location in file
 if has("autocmd")
@@ -38,9 +40,11 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 " Easy window navigation
 map <C-n> :vnew<CR>
-map <C-v>- :new<CR>
-map <C>+ <C-w>+
-map <C>- <C-w>-
+map <C-v> :new<CR>
+map == :vertical resize +5<CR>
+map -- :vertical resize -5<CR>
+map ++ :resize +5<CR>
+map __ :resize -5<CR>
 map <C-q> <C-w>q
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -56,9 +60,16 @@ nnoremap tt :tabedit<Space>
 nnoremap tn :tabnew<CR>
 nnoremap td :tabclose<CR>
 
+" Builds
+set autowrite " save before running make
+nnoremap <leader>r :make<CR>
+
 " FZF
 nnoremap oo :FZF<space>
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
+
+" Language Specific
+autocmd BufRead,BufNewFile *.jade setlocal ft=jade
 
 " ==========================
 " VIM-PLUG (PLUG-IN MANAGER)
@@ -73,6 +84,10 @@ Plug 'abertsch/Menlo-for-Powerline'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'digitaltoad/vim-pug'
+Plug 'airblade/vim-gitgutter'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
