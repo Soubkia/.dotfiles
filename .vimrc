@@ -40,7 +40,7 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 " Easy window navigation
 map <C-n> :vnew<CR>
-map <C-v> :new<CR>
+map <C-b> :new<CR>
 map == :vertical resize +5<CR>
 map -- :vertical resize -5<CR>
 map ++ :resize +5<CR>
@@ -50,6 +50,10 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+" Copy/Paste
+vnoremap <C-c> :w !pbcopy<CR><CR>
+nnoremap <C-v> :r !pbpaste<CR><CR>
 
 " Tabbing
 nnoremap th :tabfirst<CR>
@@ -62,7 +66,7 @@ nnoremap td :tabclose<CR>
 
 " Builds
 set autowrite " save before running make
-nnoremap <leader>r :make<CR>
+nnoremap <leader>r :Make<CR>
 
 " FZF
 nnoremap oo :FZF<space>
@@ -88,6 +92,7 @@ Plug 'digitaltoad/vim-pug'
 Plug 'airblade/vim-gitgutter'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-dispatch'
 
 call plug#end()
 
