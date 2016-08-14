@@ -6,6 +6,8 @@ export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/b
 # git completion
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/git-prompt.sh
+# bazel completion
+source /usr/local/Cellar/bazel/0.3.1/etc/bash_completion.d/bazel-complete.bash
 
 # bash prompt
 PS1="\u@\h:\w \$(__git_ps1 '(%s)')\$ "

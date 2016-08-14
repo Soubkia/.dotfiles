@@ -46,12 +46,13 @@ map -- :vertical resize -5<CR>
 map ++ :resize +5<CR>
 map __ :resize -5<CR>
 map <C-q> <C-w>q
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+map <silent> <C-h> :call functions#WinMove('h')<CR>
+map <silent> <C-j> :call functions#WinMove('j')<CR>
+map <silent> <C-k> :call functions#WinMove('k')<CR>
+map <silent> <C-l> :call functions#WinMove('l')<CR>
 
 " Copy/Paste
+set clipboard=unnamed " use system clipboard
 vnoremap <C-c> :w !pbcopy<CR><CR>
 nnoremap <C-v> :r !pbpaste<CR><CR>
 
