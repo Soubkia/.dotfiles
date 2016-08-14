@@ -29,6 +29,7 @@ alias G='egrep'
 alias ls='ls -G'
 alias l='ls -lG'
 alias ll='ls -laG'
+alias pg='ps aux | g'
 if shell_is_linux ; then
     alias ls='ls --colo=auto'
     alias l='ls -l --color=auto'
