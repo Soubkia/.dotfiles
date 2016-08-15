@@ -95,6 +95,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-dispatch'
 Plug 'benmills/vimux'
+Plug 'edkolev/tmuxline.vim'
 
 call plug#end()
 
