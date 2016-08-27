@@ -22,5 +22,7 @@ curl -fLo $DIR/.vim/autoload/plug.vim --create-dirs https://raw.githubuserconten
 
 ln -sf $DIR/.tmux.conf ~/.tmux.conf
 
+ln -sf $DIR/bin ~/bin
+
 open /Users/AdilSoubki/.dotfiles/.terminal/Molokai.terminal
 
