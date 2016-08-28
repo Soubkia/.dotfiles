@@ -5,6 +5,7 @@ set nocompatible
 let mapleader=" "
 nnoremap ; :
 set mouse=a " enable mouse control in all modes
+set ttymouse=sgr " redraw past 220th column
 syntax enable
 set nu " turn on line numbers
 set showmatch " show matching parenthesis
@@ -91,7 +92,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'digitaltoad/vim-pug'
 Plug 'airblade/vim-gitgutter'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-dispatch'
 Plug 'benmills/vimux'
@@ -113,3 +114,6 @@ let g:airline#extensions#tabline#buffer_min_count = 1
 let g:airline#extensions#tabline#tab_min_count = 1
 let g:airline_powerline_fonts = 1
 set guifont=Menlo\ for\ Powerline
+
+" YCM
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
