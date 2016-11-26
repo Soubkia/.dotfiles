@@ -97,6 +97,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-dispatch'
 Plug 'benmills/vimux'
 Plug 'edkolev/tmuxline.vim'
+Plug 'jvirtanen/vim-octave'
 
 call plug#end()
 
